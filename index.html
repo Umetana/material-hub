@@ -247,8 +247,8 @@
             <div class="space-y-3 pt-4 border-t border-slate-100">
                 <label class="block text-[10px] font-bold text-slate-500 uppercase tracking-wider">システム情報</label>
                 <div class="p-3 bg-slate-900 text-[10px] font-mono text-slate-300 rounded-xl space-y-1">
-                    <div class="flex justify-between"><span class="text-slate-500">VERSION</span><span>2.1.4
-                            (Copy-Patch)</span></div>
+                    <div class="flex justify-between"><span class="text-slate-500">VERSION</span><span>2.1.5
+                            (Hot-fix)</span></div>
                     <div class="flex justify-between"><span class="text-slate-500">ENGINE</span><span>Gemini 2.5
                             Flash</span></div>
                     <div class="flex justify-between"><span class="text-slate-500">GROUNDING</span><span>Google
@@ -470,7 +470,7 @@
     <script>
         const STORAGE_KEY = 'stream_hub_api_key';
         const CONFIG_STORAGE_KEY = 'stream_hub_app_config_v4';
-        const modelId = "gemini-2.5-flash-preview-09-2025";
+        const modelId = "gemini-2.5-flash";
 
         let favorites = [];
         let currentNetaList = [];
@@ -841,5 +841,6 @@ JSON配列のみ返却してください。`;
         function escape(s) { if (!s) return ""; return String(s).replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m])); }
     </script>
 </body>
+
 
 </html>
